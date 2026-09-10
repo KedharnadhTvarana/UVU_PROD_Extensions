@@ -1,0 +1,70 @@
+{
+	"type": "object",
+
+        "subtab": {
+            "id": "loyaltysequence",
+            "title": "My Account Menu Sequence Configuration",
+            "description": "this is used for changing Sequence of display in my account menu",
+            "group": "loyaltyapp"
+           
+        },
+
+        "properties": {
+            "loyaltyapp.loyaltymainseq":
+            {
+                  "group": "loyaltyapp"
+                , "subtab":"loyaltysequence"
+                , "type": "integer"
+                , "title": "Loyalty Rewards Sequence"
+                , "default": 8
+            },
+            "loyaltyapp.earnedseq":
+            {
+                  "group": "loyaltyapp"
+                , "subtab":"loyaltysequence"
+                , "type": "integer"
+                , "title": "Eanrned History Sequence"
+                , "default": 1
+            },
+            "loyaltyapp.redeemseq":
+            {
+                  "group": "loyaltyapp"
+                , "subtab":"loyaltysequence"
+                , "type": "integer"
+                , "title": "Redeem History Sequence"
+                , "default": 2
+            },
+            "loyaltyapp.referfrndseq":
+            {
+                  "group": "loyaltyapp"
+                , "subtab":"loyaltysequence"
+                , "type": "integer"
+                , "title": "Refer Friend Sequence"
+                , "default": 3
+            },
+            "loyaltyapp.gcgenseq":
+            {
+                  "group": "loyaltyapp"
+                , "subtab":"loyaltysequence"
+                , "type": "integer"
+                , "title": "Gift Certificate Sequence"
+                , "default": 4
+            },
+            "loyaltyapp.tiersseq":
+            {
+                  "group": "loyaltyapp"
+                , "subtab":"loyaltysequence"
+                , "type": "integer"
+                , "title": "Tiers Sequence"
+                , "default": 5
+            },
+            "loyaltyapp.profileupdateseq":
+            {
+                  "group": "loyaltyapp"
+                , "subtab":"loyaltysequence"
+                , "type": "integer"
+                , "title": "Loyalty Profile Sequence"
+                , "default": 6
+            }
+        }
+}

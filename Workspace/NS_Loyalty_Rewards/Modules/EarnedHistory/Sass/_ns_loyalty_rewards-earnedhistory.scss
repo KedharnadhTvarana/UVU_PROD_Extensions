@@ -1,0 +1,240 @@
+/*
+    Example sass file
+    Use:
+        * url(getExtensionAssetsPath('img/image.jpg')); to reference images and fonts in your assets folder
+        * url(getThemeAssetsPath('img/theme-image.jpg')); to reference images and fonts in the active theme available
+*/ 
+
+@import "../../GenerateGiftCertificate/Sass/_ns_loyalty_rewards-generategiftcertificate.scss";
+@import "../../LoyaltyInfo/Sass/_ns_loyalty_rewards-loyaltyinfo.scss";
+@import "../../RedeemHistory/Sass/_ns_loyalty_rewards-redeemhistory.scss";
+@import "../../ReferalCodeShare/Sass/_ns_loyalty_rewards-referalcodeshare";
+@import "../../TiersInfo/Sass/_ns_loyalty_rewards-tiersinfo.scss";
+
+ .loyalty_points_section {
+          width: 100%;
+          height: auto;
+          float: left;
+          margin: 0px;
+          padding:0px;
+        }
+        .earned_points_section {
+          margin: 30px auto  0px auto;
+          background-color: transparent;
+          color: #222;
+          text-align: center; 
+
+        }
+        .earnedsection__content {
+         padding: 0;
+         vertical-align: middle;
+         margin: 0 auto; 
+    
+    }
+    .earnedsection__content h1 {
+      color: #fff;
+      font-size: 30px;
+      border-radius: 0px;
+      background: #231f20;
+      width: 100%;
+      height: 160px;
+      vertical-align: middle;
+      line-height: initial;
+      margin: 0px auto;
+      padding: 40px 0 0 0;
+      box-shadow: 10px 10px 12px #d4d4d4; 
+    
+  }
+  .earned_sec h1 {
+   background: #E94560;
+ }
+ .available_sec h1 {
+   background: #dcdcdc;
+   color: #000;
+ }
+ .redeem_sec h1 {
+   background: #0f3460;
+ }
+ .earnedsection__content h2 {
+  color: #fff;
+}
+.earnedsection__content h1 small {
+  font-size: 16px;
+  padding: 0px;
+  margin: 0 0 0 0px;
+  font-weight: 200;
+  display: block;
+}
+.loyalty_tablesection {
+  margin: 13% 0px 0px 0px;
+  width: 100%;
+  float: left;
+  height: auto;
+}
+.earnedsection__inner h3 {
+  margin: 11px 0px 3px 0px;
+  font-size: 22px;    
+}
+.earn_pnt {
+  color: #E94560;
+}
+.available_pnt {
+ color: #dcdcdc;
+ font-weight: bold;
+}
+.redeem_pnt {
+  color: #0f3460;
+}
+.earnedsection__inner p {
+  font-size: 14px;
+  line-height: 20px;
+  margin: 5px 0 0 0;
+  color: #000000;
+  font-weight: 400;
+}
+.earned_tablehistory {
+  width: 100%;
+  height: auto;
+  float: left;
+  margin:45px 0px 0px 0px;
+  padding: 0px
+}
+.loyalty_table {
+  width: 100%;
+  margin-bottom: 20px;
+   
+}
+
+.loyalty_thead th {
+  background: #231f20;
+  color: #fff;
+  text-align: center;
+  padding: 9px 0px !important;
+
+}
+.lyalty_title {
+  padding: 0;
+  /* border-top: 1px solid #c7dde9;*/
+  display: inline-block;
+  width: 100%;
+  font-size: 24px;
+}
+.lyalty_title h3 {
+  color: #000;
+  display: inline-block;
+  padding: 0px;
+  margin: 9px 0;
+  font-weight: 400;
+}
+.loyalty_table tr td {
+ border: 1px solid #d8d8d8;
+ float: left; 
+ width: 100%;
+} 
+.loyalty_thead {
+  display: none; 
+}
+.loyalty_earnedtable {width: 100%;}
+.loyalty_earnedtable, .loyalty_earnedtable tr, 
+.loyalty_earnedtable td, .loyalty_earnedtable th {
+
+ border-collapse: collapse;
+ padding: 6px 5px !important;
+ font-size: 14px;
+}
+.loyalty_earnedtable {
+  border: 1px solid #e1e1e1;
+}
+.loyalty_earnedtable td {
+  border-left: 1px solid #e1e1e1;
+}
+.loyalty_earnedtable tr td, .loyalty_earnedtable th{
+  text-align: center;
+}
+@media only screen and (max-width: 1169px) {
+  .container {width: 100%;}
+}
+@media only screen and (max-width: 767px) {
+  .container {width: 100%;}
+}
+@media only screen and (max-width: 500px) {
+  .loyalty_earnedtable {
+    width: auto;
+  }
+  .loyalty_earnedtable, .loyalty_earnedtable head, .loyalty_earnedtable tbody, .loyalty_earnedtable th, .loyalty_earnedtable td, .loyalty_earnedtable tr {
+    display: block;
+  }
+  .loyalty_earnedtable thead tr {
+    display: none;
+  }
+  .loyalty_earnedtable tr {
+   border: 1px solid #ccc; 
+ }
+ .loyalty_earnedtable td {
+  border: none;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 40% !important;
+  white-space: normal;
+  text-align:left;
+  min-height: 30px;
+  overflow: hidden;
+  word-break:break-all;
+}
+.loyalty_earnedtable td:before {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  width: 45%;
+  padding-right: 10px;
+  text-align:left;
+  font-weight: bold;
+}
+.loyalty_earnedtable td:before { content: attr(data-title); }
+}
+.loyalty_earnedtable tr th{
+  background: #16213E;
+  color: #fff;
+} 
+.empty-points {
+  color: #cf0a2c;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+  margin: 0px 0px 24px 0px;
+}
+.show-earn {
+ color: #0067b9;
+ font-size: 18px;
+ margin: 0px 0px 10px 0px;
+}
+.refer-pnt li {
+  list-style: circle;
+  margin: 0px 0px 0 18px;
+  line-height: 26px;
+  padding: 0px 0px 0px 0px;
+  color: #1a1a1a;  
+}
+.loyalty_points_section .col-md-4 {
+  padding: 0px;
+}
+.loyalty_points_section .col-md-4:first-child {
+    padding: 0 0 0 15px !important;
+}
+.loyalty_points_section .col-md-4:last-child {
+    padding: 0 15px 0 0px !important;
+}
+.lines {
+    display: block;
+    background-image: linear-gradient(90deg, #E94560, white, #E94560);
+    height: 2px;
+    width: 80%;
+    margin: 6px auto;
+    padding: 0 0;
+}
+.lines1 {
+    background-image: linear-gradient(90deg, #dcdcdc, black, #dcdcdc);
+}
+.lines2 {
+    background-image: linear-gradient(90deg, #0f3460, white, #0f3460);
+}

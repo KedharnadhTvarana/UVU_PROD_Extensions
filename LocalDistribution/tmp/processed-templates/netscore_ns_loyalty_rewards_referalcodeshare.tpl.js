@@ -1,0 +1,29 @@
+define('netscore_ns_loyalty_rewards_referalcodeshare.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"1":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3=container.escapeExpression;
+
+  return "<div class=\"refer_section\">\n  <div class=\"row\"> \n    <div class=\"col-xs-12 col-sm-12 col-md-12 col-lg-12\">\n     <div class=\"earnrefer_image\">\n      <img src=\"/site/loyalty_images/referal.png\">\n    </div>\n    <div class=\"earnrefer_content\">\n      <!--<h1>"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Refer & Earn",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":9,"column":14},"end":{"line":9,"column":42}}}))
+    + "</h1>-->\n      <!--<h3>"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Share your code with anyone and you each get $(0)reward points when they make their Sign up.",(depth0 != null ? compilerNameLookup(depth0,"referrer_points") : depth0),{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":10,"column":14},"end":{"line":10,"column":138}}}))
+    + "</h3>-->\n      <h3>"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Share Your Code With Your Friend.",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":11,"column":10},"end":{"line":11,"column":59}}}))
+    + "</h3> \n      <h3>"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"On SignUp, You and Your Referred Friend Can Get <span>$(0)</span> Points",(depth0 != null ? compilerNameLookup(depth0,"referrer_points") : depth0),{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":12,"column":10},"end":{"line":12,"column":114}}}))
+    + "</h3>\n      <div id=\"referral_code\">\n       <h2 id=\"referral\" class=\"referal_point\" for=\"loyaltypoints\">"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Your code is",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":14,"column":67},"end":{"line":14,"column":95}}}))
+    + " <span> "
+    + alias3(((helper = (helper = compilerNameLookup(helpers,"referralCode") || (depth0 != null ? compilerNameLookup(depth0,"referralCode") : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"referralCode","hash":{},"data":data,"loc":{"start":{"line":14,"column":103},"end":{"line":14,"column":119}}}) : helper)))
+    + " </span></h2>\n       <div class=\"form-group\">\n        <div class=\"earn_mail\" data-input=\"email\" data-validation=\"control-group\">\n          <!--<label>"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Invite Friends",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":17,"column":21},"end":{"line":17,"column":51}}}))
+    + "</label>-->\n          <input class=\"email-textbox-new\" type=\"text\" name=\"email\" id=\"email\" value=\"\" placeholder=\"Enter your friend's email here\">\n          <button id=\"submit-button\" class=\"submit-button earn_submit\">\n           <img src=\"/site/loyalty_images/next_icon.png\">\n         </button>\n       </div>\n     </div>\n     <p class=\"error_field\"><span id=\"message-error\" style=\"text-align: center;display: none;\"></span></p>\n     <p class =\"earn_mailtitle\">"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"You can enter multiple email addresses by separating them with a semicolon extension(;).",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":25,"column":32},"end":{"line":25,"column":136}}}))
+    + "</p>\n       <!--<div class=\"earnpoint_submit\">\n         <button id=\"submit-button\" class=\"sharebtn\">"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Share & Earn",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":27,"column":53},"end":{"line":27,"column":81}}}))
+    + "</button>           \n       </div>-->\n       <p style=\"text-align: center; margin: 13px 0 0 0;width: 100%;float: left;\"><span id=\"message-status\" style=\"text-align: center;display: none;\"></span></p>\n     </div>\n   </div>\n </div>\n</div>\n</div>\n";
+},"3":function(container,depth0,helpers,partials,data) {
+    return "<div data-view=\"noteligible\"></div>\n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"iseligibleforloyalty") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.program(3, data, 0),"data":data,"loc":{"start":{"line":1,"column":0},"end":{"line":37,"column":7}}})) != null ? stack1 : "");
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/NetScore/NS_Loyalty_Rewards/1.0.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/SC/SC_Dev/3.6.5/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'netscore_ns_loyalty_rewards_referalcodeshare'; return template;});

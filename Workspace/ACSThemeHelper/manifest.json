@@ -1,0 +1,42 @@
+{
+    "name": "ACSThemeHelper",
+    "fantasyName": "ACS Theme Helper",
+    "vendor": "ACS",
+    "version": "1.0.0",
+    "type": "extension",
+    "target": "SCA,SCS",
+    "target_version": {
+        "SCA": "",
+        "SCS": ""
+    },
+    "description": "ACS Theme Style Changes",
+    "skins": [],
+    "assets": {
+        "img": {
+            "files": []
+        },
+        "fonts": {
+            "files": []
+        },
+        "services": {
+            "files": []
+        }
+    },
+    "sass": {
+        "entry_points": {
+            "shopping": "Modules/ACSThemeHelper/Sass/_acsthemehelper-shopping.scss",
+            "myaccount": "Modules/ACSThemeHelper/Sass/_acsthemehelper-myaccount.scss",
+            "checkout": "Modules/ACSThemeHelper/Sass/_acsthemehelper-checkout.scss"
+        },
+        "files": [
+            "Modules/ACSThemeHelper/Sass/_acsthemehelper-checkout.scss",
+            "Modules/ACSThemeHelper/Sass/_acsthemehelper-common.scss",
+            "Modules/ACSThemeHelper/Sass/_acsthemehelper-myaccount.scss",
+            "Modules/ACSThemeHelper/Sass/_acsthemehelper-shopping.scss"
+        ]
+    },
+    "local_folder": "Workspace\\ACSThemeHelper",
+    "suitescript2": {
+        "files": []
+    }
+}

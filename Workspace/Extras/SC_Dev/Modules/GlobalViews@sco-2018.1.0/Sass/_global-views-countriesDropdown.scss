@@ -1,0 +1,18 @@
+.global-views-countriesDropdown-group-label {}
+
+.global-views-countriesDropdown-select {
+    @extend .input-large
+}
+
+.global-views-countriesDropdown-input-required {
+    @extend .input-required;
+}
+
+.global-views-countriesDropdown-form-controls {}
+
+
+
+
+.global-views-countriesDropdown-select {
+    color: #757575;
+}

@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": { 
+        "UVU.config": {
+            "group": "extensions",
+            "subtab": "UVU_subtab",
+            "type": "string",
+            "title": "UVU_Title",
+            "description": "Config description example",
+            "default": "Default config example"
+        }
+    }
+}

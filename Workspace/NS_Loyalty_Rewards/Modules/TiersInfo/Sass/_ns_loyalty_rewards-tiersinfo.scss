@@ -1,0 +1,156 @@
+/*
+    Example sass file
+    Use:
+        * url(getExtensionAssetsPath('img/image.jpg')); to reference images and fonts in your assets folder
+        * url(getThemeAssetsPath('img/theme-image.jpg')); to reference images and fonts in the active theme available
+        */ 
+        .main1 {
+            float: left;
+            width: 27%;
+            margin-top: 40px;
+            margin-left: 50px;
+            /*border: 1px solid red;*/
+        }
+        .tierbasedimg{
+            width: 100px;
+            margin-left: 60px;
+        }
+
+        .tiertext {
+            float: left;
+            display: block;
+            width: 100%;
+            text-align: center;
+            border: 1px solid #ff00d4;
+            box-shadow: 10px 10px 5px 5px #888888;
+            margin-bottom: 40px;
+        }
+
+        span.highlight {
+            color: #f709d9;
+        }
+
+        p.blocktext {
+            color: #3f00ff; 
+            font-size: 20px;
+            font-style: 241px;
+            font-style: italic;
+        }
+
+        .titles {
+            text-align: center;
+            color: red;
+            font-style: italic;
+            padding-top: 20px;
+        }
+
+        .currentleveltext {
+            padding-top: 20px;
+            padding-bottom: 40px;
+        }
+        .currentlevelspan {
+            font-size: large;
+            font-style: italic;
+        }
+        .tirebase_view {
+            width: 100%;
+            float: left;
+            margin: 30px 0;
+        }
+        @media only screen and (max-width: 1024px) {
+            .main1 {
+                width: 30%;
+                margin: 0 11px;
+                text-align: center;
+            }
+            .tierbasedimg {
+                margin-left: 0;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .main1 {
+                width: 30%;
+                margin: 0 6px;
+                text-align: center;
+            }
+            .tierbasedimg {
+                margin-left: 0;
+            }
+        }
+        .tirebbase_image {
+            text-align: center;
+        }
+        .tirebbase_image h1 img {
+            width: 60%;
+        }
+        .tirebbase_image h2 {
+            color: #000;
+            font-size: 17px;
+            margin: 0;
+            position: relative;
+            padding: 10px 0 0 90px;
+            text-align: left;
+            font-weight: 500;
+        }
+        .tirebbase_image h3 {
+            font-size: 22px;
+            margin: 5px 0 0 0;
+            color: #16213E;
+            position: relative;
+            padding: 0 0 0 90px;
+            text-align: left;
+            font-weight: 500;
+        }
+        .tirebbase_sec p {
+           color: #000;
+           border-top: 1px solid #b9b9b9;
+           padding: 6px 25px;
+           font-size: 14px;
+           line-height: 22px;
+           margin: 25px 0 0 0;
+       }
+       .tirebbase_arrow p {
+        color: #000;
+        padding: 5px 0px;
+        font-size: 14px;
+        line-height: 22px;
+        font-size: 18px;
+        margin: 0;
+    }
+    .tirebbase_arrow h1 {
+        margin: 0px 0 0 0;
+    }
+    .tirebbase_arrow {
+        margin: 70px 0 0 0;
+        text-align: center;
+    }
+    .tirebbase_arrow p span {
+        display: block;
+    }
+    .loyalty_tiressection h5 {
+        text-align: center;
+        background: #16213E;
+        padding: 10px 0;
+        margin: 0 0 4% 0;
+        font-size: 21px;
+        color: #fff;
+        font-weight: 500;
+    }
+    .loyalty_tiressection {
+        margin:0px 0px 30px 0px;
+    }
+
+    .tirebbase_sec {
+        float: left;
+        width: 100%;
+        margin: 0px;
+        padding: 10px;
+        height: auto;
+        position: relative;
+        border: 1px solid #d8d5d5;
+        box-shadow: 10px 10px 12px #e7e7e7;
+    }
+    .tirebbase_sec h4 {
+        position: absolute;
+        left: 10px;
+    }

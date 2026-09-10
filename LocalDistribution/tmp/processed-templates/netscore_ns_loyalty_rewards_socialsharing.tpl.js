@@ -1,0 +1,44 @@
+define('netscore_ns_loyalty_rewards_socialsharing.tpl', ['Handlebars','Handlebars.CompilerNameLookup'], function (Handlebars, compilerNameLookup){ var t = {"1":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"isCustomerELigibleforLoyalty") : depth0),{"name":"if","hash":{},"fn":container.program(2, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":2,"column":4},"end":{"line":66,"column":7}}})) != null ? stack1 : "");
+},"2":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"itemEligible") : depth0),{"name":"if","hash":{},"fn":container.program(3, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":3,"column":4},"end":{"line":65,"column":7}}})) != null ? stack1 : "");
+},"3":function(container,depth0,helpers,partials,data) {
+    var stack1, alias1=depth0 != null ? depth0 : (container.nullContext || {});
+
+  return ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isEnableEmailShare") : depth0),{"name":"if","hash":{},"fn":container.program(4, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":4,"column":4},"end":{"line":55,"column":7}}})) != null ? stack1 : "")
+    + ((stack1 = compilerNameLookup(helpers,"if").call(alias1,(depth0 != null ? compilerNameLookup(depth0,"isEnableFbShare") : depth0),{"name":"if","hash":{},"fn":container.program(6, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":56,"column":0},"end":{"line":64,"column":7}}})) != null ? stack1 : "");
+},"4":function(container,depth0,helpers,partials,data) {
+    var helper, alias1=depth0 != null ? depth0 : (container.nullContext || {}), alias2=container.hooks.helperMissing, alias3=container.escapeExpression;
+
+  return "    <!-- Style for Email share --> \n    <!-- starts here --> \n    <a class=\"email-share\" data-action=\"email-button\" data-toggle=\"modal\" data-target=\"#myModal2\">\n      <span class=\"loyalty-email-share-icon\"></span>"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Email Share to Earn Points",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":8,"column":52},"end":{"line":8,"column":94}}}))
+    + "</a>\n\n      <!-- Modal -->\n      <div class=\"modal fade\" id=\"myModal2\" role=\"dialog\">\n        <div class=\"modal-dialog\">\n\n          <!-- Modal content-->\n          <div class=\"modal-content\">\n            <div class=\"modal-header share_text\">\n              <button type=\"button\" class=\"close popclose\" data-dismiss=\"modal\">&times;</button>\n              <h4 class=\"modal-title\">"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Send to a Friend",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":18,"column":38},"end":{"line":18,"column":70}}}))
+    + "</h4>\n          </div>\n          <div class=\"modal-body\">\n              <div class=\"email_share\">\n\n                <h4>Item: <span class=\"product_share\">"
+    + alias3(((helper = (helper = compilerNameLookup(helpers,"itemName") || (depth0 != null ? compilerNameLookup(depth0,"itemName") : depth0)) != null ? helper : alias2),(typeof helper === "function" ? helper.call(alias1,{"name":"itemName","hash":{},"data":data,"loc":{"start":{"line":23,"column":54},"end":{"line":23,"column":66}}}) : helper)))
+    + "</span></h4>\n                <p>"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Love what you see? Need a second opinion? Email this to a friend!",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":24,"column":19},"end":{"line":24,"column":100}}}))
+    + "</p>\n                <h4>"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Your friend","s info:",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":25,"column":20},"end":{"line":25,"column":56}}}))
+    + "</h4>\n\n\n                <div class=\"product_viewpop\">\n                  <div class=\"form-group col-md-6 nopadding_left\">\n                    <label for=\"yourFriendName\"><span id=\"yourFriendNameLabel\">"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"*Name",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":30,"column":79},"end":{"line":30,"column":100}}}))
+    + "</span></label>\n                    <input class=\"form-control\" type=\"text\" id=\"yourFriendName\" >\n                    <p style=\"text-align: left; margin: 3px 0px;\"><span id=\"referral-name\" style=\"display: none;\"></span></p>\n                </div>\n                <div class=\"form-group col-md-6 nopadding_right\">\n                    <label for=\"yourFriendEmail\"><span id=\"yourFriendEmailLabel\">"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"*Email Address",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":35,"column":81},"end":{"line":35,"column":111}}}))
+    + "</span></label>\n                    <input class=\"form-control\" type=\"email\" id=\"yourFriendEmail\">\n                    <p style=\"text-align: left; margin: 3px 0px;\"><span id=\"referral-email\" style=\"display: none;\"></span></p>\n                </div>\n\n                <div class=\"form-group col-md-12 nopadding\">\n                    <label for=\"messageArea\"><span id=\"shareThoughts\">"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Share your thoughts:",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":41,"column":70},"end":{"line":41,"column":106}}}))
+    + " </span></label>\n                    <textarea id=\"messageArea\" rows=\"3\" class=\"form-control\"></textarea>\n                </div>\n                <div class=\"clearfix\"></div>\n                <button class=\" share_frm\" id=\"email-share\" data-action=\"email-share-product\">"
+    + alias3((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||alias2).call(alias1,"Share",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":45,"column":94},"end":{"line":45,"column":115}}}))
+    + "</button>\n\n                <p style=\"text-align: left;     margin: 10px 0px;\"><span id=\"message\" style=\"display: none;\"></span></p>\n\n            </div>\n        </div>\n    </div>\n</div>\n</div>\n</div>\n";
+},"6":function(container,depth0,helpers,partials,data) {
+    return "<!-- ends here -->\n<!-- Style for Facebook share --> \n<!-- starts here --> \n<div class=\"loyalty-points-socialshare\">\n    <a class=\"fbshare\" href=\"#\" id=\"fb-share-local\"><i class=\"social-sharing-social-facebook\"></i> "
+    + container.escapeExpression((compilerNameLookup(helpers,"translate")||(depth0 && compilerNameLookup(depth0,"translate"))||container.hooks.helperMissing).call(depth0 != null ? depth0 : (container.nullContext || {}),"Facebook share to Earn Points",{"name":"translate","hash":{},"data":data,"loc":{"start":{"line":61,"column":99},"end":{"line":61,"column":144}}}))
+    + "</a>\n</div>\n<!-- ends here --> \n";
+},"compiler":[8,">= 4.3.0"],"main":function(container,depth0,helpers,partials,data) {
+    var stack1;
+
+  return ((stack1 = compilerNameLookup(helpers,"if").call(depth0 != null ? depth0 : (container.nullContext || {}),(depth0 != null ? compilerNameLookup(depth0,"isLogged") : depth0),{"name":"if","hash":{},"fn":container.program(1, data, 0),"inverse":container.noop,"data":data,"loc":{"start":{"line":1,"column":4},"end":{"line":67,"column":7}}})) != null ? stack1 : "");
+},"useData":true}; var main = t.main; t.main = function(){ arguments[1] = arguments[1] || {}; var ctx = arguments[1]; ctx._extension_path = 'http://localhost:7777/tmp/extensions/NetScore/NS_Loyalty_Rewards/1.0.0/'; ctx._theme_path = 'http://localhost:7777/tmp/extensions/SC/SC_Dev/3.6.5/'; return main.apply(this, arguments); }; var template = Handlebars.template(t); template.Name = 'netscore_ns_loyalty_rewards_socialsharing'; return template;});
