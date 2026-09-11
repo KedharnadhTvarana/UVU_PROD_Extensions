@@ -1,0 +1,102 @@
+{
+    "dbConfig": {
+        "keepalive": false,
+        "port": 7777,
+        "https": false,
+        "key": "KEYPEM",
+        "cert": "CERTPEM"
+    },
+    "scaffolding": {
+        "keepalive": false,
+        "port": 7777
+    },
+    "fetchConfig": {
+        "extension": "ACSThemeHelper,ConfigurationExtension,CustomFields,CustomLogin,FeaturedCategory,FeaturedProduct,GiftCertificateValueCheck,GridOrder,HeaderMenuCustomisation,InfiniteScrollExtension,InventoryDisplay,InventoryLookupExtension,ItemBadges,ManorThemeExtension,NS_Loyalty_Rewards,NewsletterSignUp,OrderStatus,Punchout2Go,SchoolAffiliationExtension,SetDefaultPaymentMethodCreditCard,StudentManagerExtension,TermsAndConditionsExtension,applecare_addon"
+    },
+    "extensionMode": true,
+    "preserveManifest": false,
+    "folders": {
+        "source": {
+            "source_path": "Workspace",
+            "extras_path": "Workspace/Extras"
+        },
+        "application_manifest": "Workspace/Extras",
+        "theme": "Extras",
+        "overrides": "Overrides",
+        "output": "LocalDistribution/tmp",
+        "local": "LocalDistribution",
+        "deploy": "DeployDistribution",
+        "extensions_dest_name": "Deploy_Extensions",
+        "extmech_parent": "-15",
+        "extensions_path": [
+            "Workspace/CustomLogin",
+            "Workspace/ACSThemeHelper",
+            "Workspace/HeaderMenuCustomisation",
+            "Workspace/NS_Loyalty_Rewards",
+            "Workspace/SetDefaultPaymentMethodCreditCard",
+            "Workspace/applecare_addon"
+        ],
+        "theme_path": "Workspace/Extras/SC_Dev",
+        "overrides_path": "Workspace/Extras/SC_Dev/Overrides"
+    },
+    "application": {
+        "application_manifest": {
+            "type": "SCS",
+            "version": "26.1.20",
+            "application": [
+                "shopping",
+                "myaccount",
+                "checkout"
+            ],
+            "extensible_resources": [
+                "skins",
+                "javascript",
+                "ssp-libraries",
+                "sass",
+                "templates",
+                "services",
+                "configuration",
+                "assets",
+                "suitescript2",
+                "translations"
+            ]
+        }
+    },
+    "services": {
+        "EXTENSION_SERVICE": {
+            "script": "customscript_ns_sc_ext_mech_restlets",
+            "deploy": "customdeploy_ns_sc_ext_mech_restlets"
+        },
+        "WEBSITE_SERVICE": {
+            "script": "customscript_ns_sc_ext_mech_restlets",
+            "deploy": "customdeploy_ns_sc_ext_mech_restlets"
+        },
+        "FILE_SERVICE": {
+            "script": "customscript_ns_sc_ext_mech_restlets",
+            "deploy": "customdeploy_ns_sc_ext_mech_restlets"
+        },
+        "DEPLOY_SERVICE": {
+            "script": "customscript_ext_mech_deployer_rest",
+            "deploy": "customdeploy_ext_mech_deployer_rest"
+        }
+    },
+    "deploy_config": {
+        "update": true,
+        "chunk_size": 80
+    },
+    "product": "gulp",
+    "credentials": {
+        "user_agent": "sc-extension-devtools/2025.1.0",
+        "authID": "UtahProdNew",
+        "key": "959eb7a6005f781e462b91069221812c417d399b849e3fc54bb2713e64914d5d",
+        "secret": "60e48cd799aabb09618dcddd0c90242e83dd3dd75d73b26a33b9673e3039c42a",
+        "account": "6825343",
+        "hostname": "6825343.restlets.api.netsuite.com",
+        "website": "2",
+        "domain": "store.uvu.edu",
+        "webapp_id": "3204",
+        "ssp_folder": "3204",
+        "is_scis": false
+    },
+    "nsdeployPath": ".nsdeploy"
+}

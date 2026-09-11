@@ -1,0 +1,160 @@
+/*
+    Example sass file
+    Use:
+        * url(getExtensionAssetsPath('img/image.jpg')); to reference images and fonts in your assets folder
+        * url(getThemeAssetsPath('img/theme-image.jpg')); to reference images and fonts in the active theme available
+*/ 
+
+.refer_section {
+    width: 100%;
+    float: left;
+    margin: 0px;
+    padding: 0;
+}
+.earnrefer_image {
+    width: 100%;
+    float: left;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+}
+.earnrefer_image img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+.earnrefer_content {
+    width: 70%;
+    height: auto;
+    float: left;
+    margin: 20px 15% 0 15%;
+    padding: 0 0 0 00;
+}
+.earnrefer_content h1 {
+    font-size: 27px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-style: italic;
+    color: blue;
+    text-align: center;
+}
+.earnrefer_content h3 {
+    font-size: 18px;
+    text-align: center;
+    padding: 0;
+    margin: 0 0 0 0;
+    color: #000;
+    line-height: 30px;
+    width: 100%;
+    font-weight: 600;
+}
+.earnrefer_content h3 span {
+   color: #275D38;
+}
+.referal_point {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 18px;
+    color: #16213e;
+    font-weight: 500;
+}
+.referal_point span {
+    padding: 0;
+    font-size: 21px;
+    font-weight: 600;
+    color: #275D38;
+    margin: 0;
+}
+.earnrefer_content h4 {
+    text-align: center;
+    font-size: 23px;
+    margin: 30px 0 10px 0;
+    color: #490092;
+}
+/*.earn_mail input {
+    width: 67%;
+    padding: 8px 36px;
+    margin: 0px auto;
+    border-radius: 4px;
+    font-size: 14px;
+}*/
+.earn_mailtitle {
+    font-size: 14px;
+    text-align: left;
+    margin: 0px 0 9px 0;
+    color: #060708;
+    float: left;
+}
+.earnpoint_submit {
+  text-align: center;
+}
+.earn_submit {
+    background: #275D38;
+    border: 1px solid #275D38;
+    padding: 0px;
+    color: white;
+    border-radius: 50px;
+    width: 45px;
+    height: 45px;
+    line-height: 55px;
+    float: left;
+    margin: 0 0 0 10px;
+}
+.email-textbox-new {
+    width: 88%;
+    display: inline-block;
+    border: 1px solid #303130;
+    font-size: 16px;
+    padding: 10px 10px;
+    float: left;
+}
+.email-textbox-new::placeholder {
+    color: #275D38 !important;
+    opacity: 1; /* Firefox */
+}
+
+.email-textbox-new:-ms-input-placeholder { /* Internet Explorer 10-11 */
+ color: #275D38 !important;
+}
+
+.email-textbox-new::-ms-input-placeholder { /* Microsoft Edge */
+ color: #275D38 !important;
+}
+.earn_mail {
+    text-align: center;
+    margin: 30px 0px 0px 0;
+    float: left;
+    width: 100%;
+}
+.earn_mail label {
+    margin: 0 10px 0 0px;
+    font-size: 20px;
+    color: #46989c;
+}
+#message-error {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    padding: 4px 32px;
+    margin: 0 0 0 0px;
+    border-radius: 3px;
+    
+}
+
+#message-status {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    padding: 4px 32px;
+    border-radius: 3px;
+    margin: 0 0 0 0px;
+    
+}
+.error_field {
+    text-align: center;
+    padding: 0;
+    float: left;
+    width: 100%;
+    margin: 0 0 10px 0;
+}

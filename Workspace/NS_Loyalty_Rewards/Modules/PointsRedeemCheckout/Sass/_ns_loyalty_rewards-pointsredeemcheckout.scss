@@ -1,0 +1,95 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+    */ 
+
+.r-p-stock {
+    margin: 0 0 8px 0;
+    color: #484848;
+    font-family: "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    line-height: 1.4;
+    text-transform: none;
+    font-size: 1rem;
+}
+.highlited-txt{        
+    color: #275D38;
+    font-size: 18px;
+    padding: 0 0px;
+}
+.points-inp {
+    padding: 5px;
+    border: 1px solid #303130;
+    padding: 10px 10px;
+    margin-top: 10px;
+}
+.points-inp:hover {
+    border: 1px solid #303130; 
+    padding: 10px 10px;
+}
+.points-cash {
+    font-size: 15px;
+    color: #5b7f8c;
+    width: 100%;
+    float: left;
+}
+.apply-btn {
+    padding: 8px 35px;
+    float: left;
+    background: #275D38;
+    border: 1px solid #275D38;
+}
+.apply-btn:hover {
+    padding: 8px 35px;
+    float: left;
+    background: #275D38;
+    border: 1px solid #275D38;
+}
+.highlited-txt1 {
+    display: inline; 
+    color: #275D38;
+    font-size: 18px;
+}
+.remove-btn {
+    padding: 7px 35px;
+    float: left;
+    margin-left: 10px;
+    background-color: #484848 !important;
+    border: none !important;
+    color: #fff;
+}
+.btn-act-div{}
+#trans-body {
+    width: 100%;
+    margin: 10px 0px 30px 0;
+    padding: 30px;
+}
+.spen-text{ 
+    color: #5b7f8c;
+    font-size:16px;
+}
+.spen-text1 {
+    color: #275D38;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding-bottom: 7px;
+    display: inline-block !important;
+}
+.refer_amt {
+  float: right; 
+}
+.loyaltyamount {
+    clear: both;
+    margin: 0;
+    line-height: 1.467;
+    letter-spacing: 0;
+    font-weight: 700;
+    margin-bottom: 0px;
+    color: #4D5256;
+    font-size: 17px;
+}

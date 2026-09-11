@@ -1,0 +1,78 @@
+{
+	"type": "object",
+
+        "subtab": {
+            "id": "loyaltylabelconfig",
+            "title": "My Account Menu Label Configuration",
+            "description": "this is used for changing label in my account menu",
+            "group": "loyaltyapp"
+           
+        },
+
+        "properties": {
+            "loyaltyapp.programlabel":
+            {
+                  "group": "loyaltyapp"
+                , "subtab":"loyaltylabelconfig"
+                , "type": "string"
+                , "title": "Loyalty Rewards"
+                , "default": "Loyalty Rewards"
+            },
+            "loyaltyapp.eanredhistory":
+            {
+                  "group": "loyaltyapp"
+                , "subtab":"loyaltylabelconfig"
+                , "type": "string"
+                , "title": "Earned History"
+                , "default": "Loyalty Earned History"
+            },
+            "loyaltyapp.redeemhistory":
+            {
+                  "group": "loyaltyapp"
+                , "subtab":"loyaltylabelconfig"
+                , "type": "string"
+                , "title": "Redeem History"
+                , "default": "Loyalty Redeem History"
+            },
+            "loyaltyapp.referearn":
+            {
+                  "group": "loyaltyapp"
+                , "subtab":"loyaltylabelconfig"
+                , "type": "string"
+                , "title": "Refer Friend"
+                , "default": "Refer and Earn"
+            },
+            "loyaltyapp.generategiftcard":
+            {
+                  "group": "loyaltyapp"
+                , "subtab":"loyaltylabelconfig"
+                , "type": "string"
+                , "title": "Gift Card"
+                , "default": "Generate Gift Card"
+            },
+            "loyaltyapp.loyaltytiers":
+            {
+                  "group": "loyaltyapp"
+                , "subtab":"loyaltylabelconfig"
+                , "type": "string"
+                , "title": "Tiers"
+                , "default": "Loyalty Tiers"
+            },
+            "loyaltyapp.updateprofile":
+            {
+                  "group": "loyaltyapp"
+                , "subtab":"loyaltylabelconfig"
+                , "type": "string"
+                , "title": "Update Profile"
+                , "default": "Update Profile"
+            },
+            "loyaltyapp.productrewards":
+            {
+                  "group": "loyaltyapp"
+                , "subtab":"loyaltylabelconfig"
+                , "type": "string"
+                , "title": "Product Reward"
+                , "default": "Product As Rewards"
+            }
+        }
+}

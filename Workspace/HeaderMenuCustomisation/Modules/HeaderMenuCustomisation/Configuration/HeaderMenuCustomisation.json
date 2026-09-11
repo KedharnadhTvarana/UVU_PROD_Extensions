@@ -1,0 +1,13 @@
+{
+    "type": "object",
+    "properties": {
+        "home.hideCarouselImages": {
+            "group": "manorConfig",
+            "subtab": "manorHome",
+            "type": "boolean",
+            "title": "Hide Carousel Images",
+            "description": "To hide Carousel Images in Home page",
+            "default": false
+        }
+    }
+}

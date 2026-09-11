@@ -1,0 +1,292 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/ 
+
+.main1 {
+    float: left;
+    width: 27%;
+    margin-top: 40px; 
+    margin-left: 50px;
+    /*border: 1px solid red;*/
+}
+.tierbasedimg{
+    width: 100px;
+    margin-left: 60px;
+}
+
+.tiertext {
+    float: left;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border: 1px solid #ff00d4;
+    box-shadow: 10px 10px 5px 5px #888888;
+    margin-bottom: 40px;
+}
+
+span.highlight {
+    color: #f709d9;
+}
+
+p.blocktext {
+    color: #3f00ff;
+    font-size: 20px;
+    font-style: 241px;
+    font-style: italic;
+}
+
+.titles {
+    text-align: center;
+    color: red;
+    font-style: italic;
+    padding-top: 20px;
+}
+
+.currentleveltext {
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+.currentlevelspan {
+    font-size: large;
+    font-style: italic;
+}
+/*newly added style*/
+.email_share h4 {
+    color: #000;
+
+}
+.product_share {
+    color: #282781;
+    font-size: 18px;
+    font-weight: 600;
+}
+.product_viewpop label {
+   width: 100%;
+   margin: 0 0 6px 0;
+   font-size: 14px;
+   color: #484848;
+}
+ 
+.product_viewpop input {
+    padding: 10px 10px;
+ 
+}
+.popclose {
+    float: right;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1;
+    background: none;
+    color: #fff;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: 1;
+}
+.submit_frm {
+    background: #e8153e !important;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 6px 14px !important;
+    text-align: center;
+    display: inline-block;
+    border: 1px solid #e8153e !important;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin: 10px 0 0 0;
+    border-radius: 3px;
+}
+.submit_frm:hover {
+    color: #fff;
+}
+.nopadding_left {
+   padding-left: 0px;
+}
+.nopadding_right {
+   padding-right: 0px;
+}
+.nopadding {
+    padding: 0px;
+    margin: 20px 0 00;
+}
+.share_text {
+    padding: 9px 15px;
+    vertical-align: middle;
+    background: #303130;
+}
+.share_text h4 {
+    color: #fff;
+    font-weight: 400;
+    font-size: 21px;
+    padding: 0px;
+    vertical-align: middle;
+    margin: 0px;
+}
+.email_share p {
+  color: #444;
+  margin: 0px 0 19px 0px;
+  font-weight: 400;
+  font-size: 15px;
+}
+.email_share h4 {
+  color: #000;
+  margin: 4px 0;
+  font-weight: 400;
+  font-size: 18px;
+}
+.product_viewpop {
+    margin: 12px 0 0 0;
+}
+.emailshare {
+    @extend .loyalty-points-socialshare;
+}
+.loyalty-email-share-icon {
+    @extend .fa;
+    @extend %fa-envelope;
+     
+    background: #275D38;
+    color: #fff;
+    padding: 12px 12px;
+    font-size: 18px;
+    border-radius: 50%;
+    margin-right: 6px;
+}
+.emailshare a {
+    padding: 10px 10px;
+    background: #f2f2f2;
+    border: 1px solid #e6e6e6;
+} 
+
+#referral-name, #referral-email {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
+    padding: 4px 32px;
+    margin: 0 0 0 0px;
+    border-radius: 3px; 
+}
+
+#message {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    padding: 4px 11px;
+    border-radius: 3px;
+    margin: 20px 0px; 
+}
+/* Ends here */
+/* Style for facebook share  */
+/* Starts here */
+.loyalty-points-socialshare {
+ margin: 10px 12px 20px 0;
+ float: left;
+}
+.loyalty-points-socialshare a {
+  padding: 10px 10px;
+  background: #f2f2f2;
+  border: 1px solid #e6e6e6;    
+  font-size: 13px; 
+}
+.loyalty-points-socialshare a i {
+   background: #3b5998;
+   color: #fff;
+   padding: 6px 10px;
+   border-radius: 50%;
+   margin-right: 6px;
+}
+.social-sharing-social-facebook {
+    @extend .fa;
+    @extend %fa-facebook;
+}
+/* Ends here */
+
+/* Netscore Added a code for Social Sharing layouts display inline */
+/* Starts Here */
+.fbshare { 
+   display: inline;
+   float: left;
+   width: auto; 
+}
+.email-share {
+   background: #fff;
+    text-transform: uppercase;
+    padding: 5px 18px 5px 7px;
+    border-radius: 50px;
+    display: inline-block;
+    float: left;
+    border: 1px solid #838383;
+    margin: 10px 10px 10px 0px;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+#fb-success-msg {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    padding: 4px 11px;
+    border-radius: 3px;
+    margin: 20px 0px;
+}
+.share_link {
+    width: 100%;
+    float: left;
+}
+.share_frm {
+    padding: 7px 20px;
+    margin-top: 25px;
+    font-size: 16px;
+    background: #275D38;
+    color: #fff;
+    font-weight: 200;
+    border: 1px solid #275D38;
+    border-radius: 50px;
+    text-transform: uppercase;
+    display: inline-block;
+}
+ 
+.product_viewpop textarea {
+    width: 100%;
+    min-height: auto;
+    padding: 10px 10px;
+    border: 1px solid #303130;
+     
+}
+.share_frm:hover {
+    color: #fff;
+    background: #275D38;
+    border-color: #275D38;
+    text-decoration: none;
+    border-radius: 50px;
+}
+/* Ends Here */   
+@media (min-width: 50px) and (max-width: 767px ) {
+    #fb-success-msg {
+        margin: 0 0 0 0px;
+    }
+    .fbshare {
+        display: block;
+        float: left; 
+    }
+    .loyalty-points-socialshare a {
+        padding: 10px 4px;
+        background: #f2f2f2;
+        border: 1px solid #e6e6e6; 
+    } 
+    #message {
+        margin: 0 0 0 0px;
+    }
+    .nopadding_left {
+        padding-left: 15px; 
+    }
+    .nopadding_right {
+        padding-right: 15px; 
+    }
+    .nopadding {
+        padding: 15px; 
+    }
+}

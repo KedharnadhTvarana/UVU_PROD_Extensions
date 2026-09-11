@@ -1,0 +1,24 @@
+/*
+	Sass Application Entry Point
+	Link all your sass dependencies in the right order
+
+	Example:
+	@import "other-sass-file.scss";
+	@import "../../<other module>/Sass/other-sass-file.scss";
+*/
+
+.headermenucustomisation-info-card {
+	@extend .info-card;
+}
+
+.headermenucustomisation-info-card-content {
+	@extend .info-card-content;
+	color: $sc-color-secondary;
+	font-weight: bold;
+}
+
+
+
+.header-menu-myaccount-anchor-level2[name="Gift Certificates"] {
+	display: none;
+}

@@ -1,0 +1,133 @@
+{
+    "type": "object",
+
+    "group": {
+        "id": "loyaltyapp",
+        "title": "NetscoreLoyaltyRewardsApp",
+        "description": "Loyalty App Setup"
+    },
+
+    "subtab": {
+        "id": "loyaltygeneralconfig",
+        "title": "General Configuration",
+        "description": "this is used for general app configuration",
+        "group": "loyaltyapp"
+        
+    },
+
+    "properties": {
+        "loyaltyapp.facebookappid":
+        {
+          "group": "loyaltyapp"
+          , "type": "string"
+          , "title": "Facebook AppID"
+          , "default": " "
+      },
+      "loyaltyapp.enableloyaltyprogram":
+      {
+          "group": "loyaltyapp"
+          , "type": "boolean"
+          , "title": "Loyalty Program"
+          , "default": true
+      },
+      "loyaltyapp.enablepointsdisplayplp":
+      {
+          "group": "loyaltyapp"
+          , "type": "boolean"
+          , "title": "Points Display in PLP"
+          , "default": true
+      },
+      "loyaltyapp.enablepointsdisplaypdp":
+      {
+          "group": "loyaltyapp"
+          , "type": "boolean"
+          , "title": "Points Display in PDP"
+          , "default": true
+      },
+      "loyaltyapp.enableemailshare":
+      {
+          "group": "loyaltyapp"
+          , "type": "boolean"
+          , "title": "Product sharing through Email"
+          , "default": true
+      },
+      "loyaltyapp.enablefbshare":
+      {
+          "group": "loyaltyapp"
+          , "type": "boolean"
+          , "title": "Product sharing through Facebook"
+          , "default": true
+      },
+      "loyaltyapp.enablereferralcodesignup":
+      {
+          "group": "loyaltyapp"
+          , "type": "boolean"
+          , "title": "Enable Referral code use at Signup"
+          , "default": true
+      },
+      "loyaltyapp.logintoseepoints":
+      {
+          "group": "loyaltyapp"
+          , "type": "boolean"
+          , "title": "Login to See Points"
+          , "default": true
+      },
+      "loyaltyapp.enableredeemhistory":
+      {
+          "group": "loyaltyapp"
+          , "type": "boolean"
+          , "title": "Enable Redeem History"
+          , "default": true
+      },
+      "loyaltyapp.enablereferfriend":
+      {
+          "group": "loyaltyapp"
+          , "type": "boolean"
+          , "title": "Enable refer Friend"
+          , "default": true
+      },
+      "loyaltyapp.enablegcredeem":
+      {
+          "group": "loyaltyapp"
+          , "type": "boolean"
+          , "title": "Enable Gift Certificate Generation"
+          , "default": true
+      },
+      "loyaltyapp.enableTiersinfo":
+      {
+          "group": "loyaltyapp"
+          , "type": "boolean"
+          , "title": "Enable Tiers Info"
+          , "default": true
+      },
+      "loyaltyapp.enableprofileinfo":
+      {
+          "group": "loyaltyapp"
+          , "type": "boolean"
+          , "title": "Enable Profile Info"
+          , "default": true
+      },
+      "loyaltyapp.enableRedeemPointsCheckout":
+      {
+          "group": "loyaltyapp"
+          , "type": "boolean"
+          , "title": "Enable Points redeem on checkout"
+          , "default": true
+      },
+      "loyaltyapp.mailtonoteligible":
+      {
+          "group": "loyaltyapp"
+          , "type": "string"
+          , "title": "Email"
+          , "default": " "
+      },
+      "loyaltyapp.messagenoteligible":
+      {
+          "group": "loyaltyapp"
+          , "type": "string"
+          , "title": "Message"
+          , "default": " "
+      }
+
+  }
+}

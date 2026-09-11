@@ -1,0 +1,43 @@
+{
+	"name": "ACSThemeHelper",
+	"fantasyName": "ACS Theme Helper",
+	"vendor": "ACS",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "ACS Theme Style Changes",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/ACSThemeHelper/Sass/_acsthemehelper-shopping.scss",
+			"myaccount": "Modules/ACSThemeHelper/Sass/_acsthemehelper-myaccount.scss",
+			"checkout": "Modules/ACSThemeHelper/Sass/_acsthemehelper-checkout.scss"
+		},
+		"files": [
+			"Modules/ACSThemeHelper/Sass/_acsthemehelper-checkout.scss",
+			"Modules/ACSThemeHelper/Sass/_acsthemehelper-common.scss",
+			"Modules/ACSThemeHelper/Sass/_acsthemehelper-myaccount.scss",
+			"Modules/ACSThemeHelper/Sass/_acsthemehelper-shopping.scss"
+		]
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/ACS/ACSThemeHelper@1.0.0",
+	"activation_id": "3",
+	"extension_id": "3801"
+}
