@@ -1,107 +1,108 @@
 {
-    "name": "applecare_addon",
-    "fantasyName": "applecare_addon",
-    "vendor": "Tvarana",
-    "version": "1.0.2",
-    "type": "extension",
-    "target": "SCA,SCS",
-    "target_version": {
-        "SCA": "",
-        "SCS": ""
-    },
-    "description": "adding applecare item on clicking add to cart",
-    "skins": [],
-    "assets": {
-        "img": {
-            "files": []
-        },
-        "fonts": {
-            "files": []
-        },
-        "services": {
-            "files": [
-                "services/UVU.Service.ss"
-            ]
-        }
-    },
-    "configuration": {
-        "files": [
-            "Modules/UVU/Configuration/UVU.json"
-        ]
-    },
-    "sass": {
-        "entry_points": {
-            "shopping": "Modules/UVU/Sass/_uvu-uvu.scss",
-            "myaccount": "Modules/UVU/Sass/_uvu-uvu.scss",
-            "checkout": "Modules/UVU/Sass/_uvu-uvu.scss"
-        },
-        "files": [
-            "Modules/UVU/Sass/_uvu-uvu.scss"
-        ]
-    },
-    "templates": {
-        "application": {
-            "shopping": {
-                "files": [
-                    "Modules/UVU/Templates/tvarana_uvu_uvu.tpl"
-                ]
-            },
-            "myaccount": {
-                "files": [
-                    "Modules/UVU/Templates/tvarana_uvu_uvu.tpl"
-                ]
-            },
-            "checkout": {
-                "files": [
-                    "Modules/UVU/Templates/tvarana_uvu_uvu.tpl"
-                ]
-            }
-        }
-    },
-    "javascript": {
-        "entry_points": {
-            "shopping": "Modules/UVU/JavaScript/Tvarana.UVU.UVU.js",
-            "myaccount": "Modules/UVU/JavaScript/Tvarana.UVU.UVU.js",
-            "checkout": "Modules/UVU/JavaScript/Tvarana.UVU.UVU.js"
-        },
-        "application": {
-            "shopping": {
-                "files": [
-                    "Modules/UVU/JavaScript/Tvarana.UVU.UVU.js",
-                    "Modules/UVU/JavaScript/UVU.View.js",
-                    "Modules/UVU/JavaScript/Tvarana.UVU.UVU.Model.js",
-                    "Modules/UVU/JavaScript/Tvarana.UVU.UVU.SS2Model.js"
-                ]
-            },
-            "myaccount": {
-                "files": [
-                    "Modules/UVU/JavaScript/Tvarana.UVU.UVU.js",
-                    "Modules/UVU/JavaScript/UVU.View.js",
-                    "Modules/UVU/JavaScript/Tvarana.UVU.UVU.Model.js",
-                    "Modules/UVU/JavaScript/Tvarana.UVU.UVU.SS2Model.js"
-                ]
-            },
-            "checkout": {
-                "files": [
-                    "Modules/UVU/JavaScript/Tvarana.UVU.UVU.js",
-                    "Modules/UVU/JavaScript/UVU.View.js",
-                    "Modules/UVU/JavaScript/Tvarana.UVU.UVU.Model.js",
-                    "Modules/UVU/JavaScript/Tvarana.UVU.UVU.SS2Model.js"
-                ]
-            }
-        }
-    },
-    "ssp-libraries": {
-        "entry_point": "Modules/UVU/SuiteScript/Tvarana.UVU.UVU.js",
-        "files": [
-            "Modules/UVU/SuiteScript/Tvarana.UVU.UVU.js",
-            "Modules/UVU/SuiteScript/UVU.ServiceController.js"
-        ]
-    },
-    "local_folder": "Workspace\\applecare_addon",
-    "suitescript2": {
-        "files": [
-            "Modules/UVU/SuiteScript2/UVU.Service.ss"
-        ]
-    }
+	"name": "applecare_addon",
+	"fantasyName": "applecare_addon",
+	"vendor": "Tvarana",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.2",
+	"description": "adding applecare item on clicking add to cart",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/UVU.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/UVU/Configuration/UVU.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/UVU/Templates/tvarana_uvu_uvu.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/UVU/Templates/tvarana_uvu_uvu.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/UVU/Templates/tvarana_uvu_uvu.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/UVU/Sass/_uvu-uvu.scss",
+			"myaccount": "Modules/UVU/Sass/_uvu-uvu.scss",
+			"checkout": "Modules/UVU/Sass/_uvu-uvu.scss"
+		},
+		"files": [
+			"Modules/UVU/Sass/_uvu-uvu.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/UVU/JavaScript/Tvarana.UVU.UVU.js",
+			"myaccount": "Modules/UVU/JavaScript/Tvarana.UVU.UVU.js",
+			"checkout": "Modules/UVU/JavaScript/Tvarana.UVU.UVU.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/UVU/JavaScript/Tvarana.UVU.UVU.js",
+					"Modules/UVU/JavaScript/UVU.View.js",
+					"Modules/UVU/JavaScript/Tvarana.UVU.UVU.Model.js",
+					"Modules/UVU/JavaScript/Tvarana.UVU.UVU.SS2Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/UVU/JavaScript/Tvarana.UVU.UVU.js",
+					"Modules/UVU/JavaScript/UVU.View.js",
+					"Modules/UVU/JavaScript/Tvarana.UVU.UVU.Model.js",
+					"Modules/UVU/JavaScript/Tvarana.UVU.UVU.SS2Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/UVU/JavaScript/Tvarana.UVU.UVU.js",
+					"Modules/UVU/JavaScript/UVU.View.js",
+					"Modules/UVU/JavaScript/Tvarana.UVU.UVU.Model.js",
+					"Modules/UVU/JavaScript/Tvarana.UVU.UVU.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/UVU/SuiteScript/Tvarana.UVU.UVU.js",
+		"files": [
+			"Modules/UVU/SuiteScript/Tvarana.UVU.UVU.js",
+			"Modules/UVU/SuiteScript/UVU.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/UVU/SuiteScript2/UVU.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Tvarana/applecare_addon@1.0.2",
+	"activation_id": "3",
+	"extension_id": "9501"
 }

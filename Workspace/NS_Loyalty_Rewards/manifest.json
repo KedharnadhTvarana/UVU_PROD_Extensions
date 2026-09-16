@@ -1,201 +1,202 @@
 {
-    "name": "NS_Loyalty_Rewards",
-    "fantasyName": "NetScore Loyalty Rewards",
-    "vendor": "NetScore",
-    "version": "1.0.0",
-    "type": "extension",
-    "target": "SCA,SCS",
-    "target_version": {
-        "SCA": "",
-        "SCS": ""
-    },
-    "description": "This extension will contains functionality of netscore loyalty rewards suiteapp",
-    "skins": [],
-    "assets": {
-        "img": {
-            "files": []
-        },
-        "fonts": {
-            "files": []
-        },
-        "services": {
-            "files": [
-                "services/EarnedHistory.Service.ss",
-                "services/RedeemHistory.Service.ss",
-                "services/ReferalCodeShare.Service.ss",
-                "services/TiersInfo.Service.ss",
-                "services/LoyaltyInfo.Service.ss",
-                "services/DisplayLoyaltyPoints.Service.ss",
-                "services/SocialSharing.Service.ss",
-                "services/PointsRedeemCheckout.Service.ss",
-                "services/GenerateGiftCertificate.Service.ss"
-            ]
-        }
-    },
-    "configuration": {
-        "files": [
-            "Modules/LoyaltyConfiguration/Configuration/LoyaltyConfiguration.json",
-            "Modules/LoyaltyConfiguration/Configuration/MyaccountMenuLabel.json",
-            "Modules/LoyaltyConfiguration/Configuration/OrderSequence.json"
-        ]
-    },
-    "sass": {
-        "entry_points": {
-            "shopping": "Modules/DisplayLoyaltyPoints/Sass/_ns_loyalty_rewards-displayloyaltypoints.scss",
-            "myaccount": "Modules/EarnedHistory/Sass/_ns_loyalty_rewards-earnedhistory.scss",
-            "checkout": "Modules/PointsRedeemCheckout/Sass/_ns_loyalty_rewards-pointsredeemcheckout.scss"
-        },
-        "files": [
-            "Modules/EarnedHistory/Sass/_ns_loyalty_rewards-earnedhistory.scss",
-            "Modules/RedeemHistory/Sass/_ns_loyalty_rewards-redeemhistory.scss",
-            "Modules/ReferalCodeShare/Sass/_ns_loyalty_rewards-referalcodeshare.scss",
-            "Modules/TiersInfo/Sass/_ns_loyalty_rewards-tiersinfo.scss",
-            "Modules/LoyaltyInfo/Sass/_ns_loyalty_rewards-loyaltyinfo.scss",
-            "Modules/DisplayLoyaltyPoints/Sass/_ns_loyalty_rewards-displayloyaltypoints.scss",
-            "Modules/SocialSharing/Sass/_ns_loyalty_rewards-socialsharing.scss",
-            "Modules/PointsRedeemCheckout/Sass/_ns_loyalty_rewards-pointsredeemcheckout.scss",
-            "Modules/GenerateGiftCertificate/Sass/_ns_loyalty_rewards-generategiftcertificate.scss",
-            "Modules/ReferCodeAtSignup/Sass/_ns_loyalty_rewards-refercodeatsignup.scss"
-        ]
-    },
-    "templates": {
-        "application": {
-            "shopping": {
-                "files": [
-                    "Modules/DisplayLoyaltyPoints/Templates/netscore_ns_loyalty_rewards_displayloyaltypoints.tpl",
-                    "Modules/SocialSharing/Templates/netscore_ns_loyalty_rewards_socialsharing.tpl",
-                    "Modules/DisplayLoyaltyPoints/Templates/netscore_ns_loyalty_rewards_displayplployaltypoints.tpl",
-                    "Modules/EarnedHistory/Templates/netscore_ns_loyalty_rewards_earnedhistory_not_eligible.tpl",
-                    "Modules/EarnedHistory/Templates/netscore_ns_loyalty_rewards_earnedhistory.tpl",
-                    "Modules/GenerateGiftCertificate/Templates/netscore_ns_loyalty_rewards_generategiftcertificate.tpl",
-                    "Modules/LoyaltyInfo/Templates/netscore_ns_loyalty_rewards_loyaltyinfo.tpl",
-                    "Modules/RedeemHistory/Templates/netscore_ns_loyalty_rewards_redeemhistory.tpl",
-                    "Modules/ReferalCodeShare/Templates/netscore_ns_loyalty_rewards_referalcodeshare.tpl",
-                    "Modules/TiersInfo/Templates/netscore_ns_loyalty_rewards_tiersinfo.tpl"
-                ]
-            },
-            "myaccount": {
-                "files": [
-                    "Modules/EarnedHistory/Templates/netscore_ns_loyalty_rewards_earnedhistory.tpl",
-                    "Modules/RedeemHistory/Templates/netscore_ns_loyalty_rewards_redeemhistory.tpl",
-                    "Modules/ReferalCodeShare/Templates/netscore_ns_loyalty_rewards_referalcodeshare.tpl",
-                    "Modules/TiersInfo/Templates/netscore_ns_loyalty_rewards_tiersinfo.tpl",
-                    "Modules/LoyaltyInfo/Templates/netscore_ns_loyalty_rewards_loyaltyinfo.tpl",
-                    "Modules/EarnedHistory/Templates/netscore_ns_loyalty_rewards_earnedhistory_not_eligible.tpl",
-                    "Modules/GenerateGiftCertificate/Templates/netscore_ns_loyalty_rewards_generategiftcertificate.tpl",
-                    "Modules/DisplayLoyaltyPoints/Templates/netscore_ns_loyalty_rewards_displayloyaltypoints.tpl",
-                    "Modules/DisplayLoyaltyPoints/Templates/netscore_ns_loyalty_rewards_displayplployaltypoints.tpl",
-                    "Modules/SocialSharing/Templates/netscore_ns_loyalty_rewards_socialsharing.tpl"
-                ]
-            },
-            "checkout": {
-                "files": [
-                    "Modules/PointsRedeemCheckout/Templates/netscore_ns_loyalty_rewards_pointsredeemcheckout.tpl",
-                    "Modules/ReferCodeAtSignup/Templates/netscore_ns_loyalty_rewards_refercodeatsignup.tpl",
-                    "Modules/DisplayLoyaltyPoints/Templates/netscore_ns_loyalty_rewards_displayloyaltypoints.tpl",
-                    "Modules/DisplayLoyaltyPoints/Templates/netscore_ns_loyalty_rewards_displayplployaltypoints.tpl",
-                    "Modules/EarnedHistory/Templates/netscore_ns_loyalty_rewards_earnedhistory_not_eligible.tpl",
-                    "Modules/EarnedHistory/Templates/netscore_ns_loyalty_rewards_earnedhistory.tpl",
-                    "Modules/GenerateGiftCertificate/Templates/netscore_ns_loyalty_rewards_generategiftcertificate.tpl",
-                    "Modules/LoyaltyInfo/Templates/netscore_ns_loyalty_rewards_loyaltyinfo.tpl",
-                    "Modules/RedeemHistory/Templates/netscore_ns_loyalty_rewards_redeemhistory.tpl",
-                    "Modules/ReferalCodeShare/Templates/netscore_ns_loyalty_rewards_referalcodeshare.tpl",
-                    "Modules/SocialSharing/Templates/netscore_ns_loyalty_rewards_socialsharing.tpl",
-                    "Modules/TiersInfo/Templates/netscore_ns_loyalty_rewards_tiersinfo.tpl"
-                ]
-            }
-        }
-    },
-    "javascript": {
-        "entry_points": {
-            "shopping": "Modules/DisplayLoyaltyPoints/JavaScript/NetScore.NS_Loyalty_Rewards.DisplayLoyaltyPoints.js",
-            "myaccount": "Modules/EarnedHistory/JavaScript/NetScore.NS_Loyalty_Rewards.EarnedHistory.js",
-            "checkout": "Modules/PointsRedeemCheckout/JavaScript/NetScore.NS_Loyalty_Rewards.PointsRedeemCheckout.js"
-        },
-        "application": {
-            "shopping": {
-                "files": [
-                    "Modules/DisplayLoyaltyPoints/JavaScript/NetScore.NS_Loyalty_Rewards.DisplayLoyaltyPoints.js",
-                    "Modules/DisplayLoyaltyPoints/JavaScript/DisplayLoyaltyPoints.View.js",
-                    "Modules/SocialSharing/JavaScript/NetScore.NS_Loyalty_Rewards.SocialSharing.js",
-                    "Modules/SocialSharing/JavaScript/SocialSharing.View.js",
-                    "Modules/DisplayLoyaltyPoints/JavaScript/NetScore.NS_Loyalty_Rewards.DisplayLoyaltyPoints.Model.js",
-                    "Modules/SocialSharing/JavaScript/NetScore.NS_Loyalty_Rewards.SocialSharing.Model.js",
-                    "Modules/DisplayLoyaltyPoints/JavaScript/DisplayLoyaltyPoints.PLP.View.js",
-                    "Modules/LoyaltyInfo/JavaScript/NetScore.NS_Loyalty_Rewards.LoyaltyInfoGet.Model.js"
-                ]
-            },
-            "myaccount": {
-                "files": [
-                    "Modules/EarnedHistory/JavaScript/NetScore.NS_Loyalty_Rewards.EarnedHistory.js",
-                    "Modules/EarnedHistory/JavaScript/EarnedHistory.View.js",
-                    "Modules/EarnedHistory/JavaScript/NetScore.NS_Loyalty_Rewards.EarnedHistory.Model.js",
-                    "Modules/EarnedHistory/JavaScript/NetScore.NS_Loyalty_Rewards.EarnedHistory.SS2Model.js",
-                    "Modules/RedeemHistory/JavaScript/NetScore.NS_Loyalty_Rewards.RedeemHistory.js",
-                    "Modules/RedeemHistory/JavaScript/RedeemHistory.View.js",
-                    "Modules/ReferalCodeShare/JavaScript/NetScore.NS_Loyalty_Rewards.ReferalCodeShare.js",
-                    "Modules/ReferalCodeShare/JavaScript/ReferalCodeShare.View.js",
-                    "Modules/TiersInfo/JavaScript/NetScore.NS_Loyalty_Rewards.TiersInfo.js",
-                    "Modules/TiersInfo/JavaScript/TiersInfo.View.js",
-                    "Modules/LoyaltyInfo/JavaScript/NetScore.NS_Loyalty_Rewards.LoyaltyInfo.js",
-                    "Modules/LoyaltyInfo/JavaScript/LoyaltyInfo.View.js",
-                    "Modules/EarnedHistory/JavaScript/EarnedHistory.Router.js",
-                    "Modules/LoyaltyInfo/JavaScript/NetScore.NS_Loyalty_Rewards.LoyaltyInfo.Model.js",
-                    "Modules/RedeemHistory/JavaScript/NetScore.NS_Loyalty_Rewards.RedeemHistory.Model.js",
-                    "Modules/ReferalCodeShare/JavaScript/NetScore.NS_Loyalty_Rewards.ReferalCodeShare.Model.js",
-                    "Modules/TiersInfo/JavaScript/NetScore.NS_Loyalty_Rewards.TiersInfo.Model.js",
-                    "Modules/LoyaltyInfo/JavaScript/LoyaltyInfo.Router.js",
-                    "Modules/RedeemHistory/JavaScript/RedeemHistory.Router.js",
-                    "Modules/ReferalCodeShare/JavaScript/ReferalCodeShare.Router.js",
-                    "Modules/TiersInfo/JavaScript/TiersInfo.Router.js",
-                    "Modules/EarnedHistory/JavaScript/EarnedHistory.NotEligible.View.js",
-                    "Modules/GenerateGiftCertificate/JavaScript/NetScore.NS_Loyalty_Rewards.GenerateGiftCertificate.js",
-                    "Modules/GenerateGiftCertificate/JavaScript/GenerateGiftCertificate.View.js",
-                    "Modules/GenerateGiftCertificate/JavaScript/NetScore.NS_Loyalty_Rewards.GenerateGiftCertificate.Model.js",
-                    "Modules/GenerateGiftCertificate/JavaScript/GenerateGiftCertificate.Router.js",
-                    "Modules/LoyaltyInfo/JavaScript/NetScore.NS_Loyalty_Rewards.LoyaltyInfoGet.Model.js"
-                ]
-            },
-            "checkout": {
-                "files": [
-                    "Modules/PointsRedeemCheckout/JavaScript/NetScore.NS_Loyalty_Rewards.PointsRedeemCheckout.js",
-                    "Modules/PointsRedeemCheckout/JavaScript/PointsRedeemCheckout.View.js",
-                    "Modules/PointsRedeemCheckout/JavaScript/NetScore.NS_Loyalty_Rewards.PointsRedeemCheckout.Model.js",
-                    "Modules/ReferCodeAtSignup/JavaScript/NetScore.NS_Loyalty_Rewards.ReferCodeAtSignup.js",
-                    "Modules/ReferCodeAtSignup/JavaScript/ReferCodeAtSignup.View.js",
-                    "Modules/ReferCodeAtSignup/JavaScript/NetScore.NS_Loyalty_Rewards.ReferCodeAtSignup.Model.js",
-                    "Modules/LoyaltyInfo/JavaScript/NetScore.NS_Loyalty_Rewards.LoyaltyInfoGet.Model.js"
-                ]
-            }
-        }
-    },
-    "ssp-libraries": {
-        "entry_point": "Modules/EarnedHistory/SuiteScript/NetScore.NS_Loyalty_Rewards.EarnedHistory.js",
-        "files": [
-            "Modules/EarnedHistory/SuiteScript/NetScore.NS_Loyalty_Rewards.EarnedHistory.js",
-            "Modules/EarnedHistory/SuiteScript/EarnedHistory.ServiceController.js",
-            "Modules/RedeemHistory/SuiteScript/NetScore.NS_Loyalty_Rewards.RedeemHistory.js",
-            "Modules/RedeemHistory/SuiteScript/RedeemHistory.ServiceController.js",
-            "Modules/ReferalCodeShare/SuiteScript/NetScore.NS_Loyalty_Rewards.ReferalCodeShare.js",
-            "Modules/ReferalCodeShare/SuiteScript/ReferalCodeShare.ServiceController.js",
-            "Modules/TiersInfo/SuiteScript/NetScore.NS_Loyalty_Rewards.TiersInfo.js",
-            "Modules/TiersInfo/SuiteScript/TiersInfo.ServiceController.js",
-            "Modules/LoyaltyInfo/SuiteScript/NetScore.NS_Loyalty_Rewards.LoyaltyInfo.js",
-            "Modules/LoyaltyInfo/SuiteScript/LoyaltyInfo.ServiceController.js",
-            "Modules/DisplayLoyaltyPoints/SuiteScript/NetScore.NS_Loyalty_Rewards.DisplayLoyaltyPoints.js",
-            "Modules/DisplayLoyaltyPoints/SuiteScript/DisplayLoyaltyPoints.ServiceController.js",
-            "Modules/SocialSharing/SuiteScript/NetScore.NS_Loyalty_Rewards.SocialSharing.js",
-            "Modules/SocialSharing/SuiteScript/SocialSharing.ServiceController.js",
-            "Modules/PointsRedeemCheckout/SuiteScript/NetScore.NS_Loyalty_Rewards.PointsRedeemCheckout.js",
-            "Modules/PointsRedeemCheckout/SuiteScript/PointsRedeemCheckout.ServiceController.js",
-            "Modules/GenerateGiftCertificate/SuiteScript/NetScore.NS_Loyalty_Rewards.GenerateGiftCertificate.js",
-            "Modules/GenerateGiftCertificate/SuiteScript/GenerateGiftCertificate.ServiceController.js"
-        ]
-    },
-    "local_folder": "Workspace\\NS_Loyalty_Rewards",
-    "suitescript2": {
-        "files": [
-            "Modules/EarnedHistory/SuiteScript2/EarnedHistory.Service.ss"
-        ]
-    }
+	"name": "NS_Loyalty_Rewards",
+	"fantasyName": "NetScore Loyalty Rewards",
+	"vendor": "NetScore",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "This extension will contains functionality of netscore loyalty rewards suiteapp",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/EarnedHistory.Service.ss",
+				"services/RedeemHistory.Service.ss",
+				"services/ReferalCodeShare.Service.ss",
+				"services/TiersInfo.Service.ss",
+				"services/LoyaltyInfo.Service.ss",
+				"services/DisplayLoyaltyPoints.Service.ss",
+				"services/SocialSharing.Service.ss",
+				"services/PointsRedeemCheckout.Service.ss",
+				"services/GenerateGiftCertificate.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/LoyaltyConfiguration/Configuration/LoyaltyConfiguration.json",
+			"Modules/LoyaltyConfiguration/Configuration/MyaccountMenuLabel.json",
+			"Modules/LoyaltyConfiguration/Configuration/OrderSequence.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/DisplayLoyaltyPoints/Templates/netscore_ns_loyalty_rewards_displayloyaltypoints.tpl",
+					"Modules/SocialSharing/Templates/netscore_ns_loyalty_rewards_socialsharing.tpl",
+					"Modules/DisplayLoyaltyPoints/Templates/netscore_ns_loyalty_rewards_displayplployaltypoints.tpl",
+					"Modules/EarnedHistory/Templates/netscore_ns_loyalty_rewards_earnedhistory_not_eligible.tpl",
+					"Modules/EarnedHistory/Templates/netscore_ns_loyalty_rewards_earnedhistory.tpl",
+					"Modules/GenerateGiftCertificate/Templates/netscore_ns_loyalty_rewards_generategiftcertificate.tpl",
+					"Modules/LoyaltyInfo/Templates/netscore_ns_loyalty_rewards_loyaltyinfo.tpl",
+					"Modules/RedeemHistory/Templates/netscore_ns_loyalty_rewards_redeemhistory.tpl",
+					"Modules/ReferalCodeShare/Templates/netscore_ns_loyalty_rewards_referalcodeshare.tpl",
+					"Modules/TiersInfo/Templates/netscore_ns_loyalty_rewards_tiersinfo.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/EarnedHistory/Templates/netscore_ns_loyalty_rewards_earnedhistory.tpl",
+					"Modules/RedeemHistory/Templates/netscore_ns_loyalty_rewards_redeemhistory.tpl",
+					"Modules/ReferalCodeShare/Templates/netscore_ns_loyalty_rewards_referalcodeshare.tpl",
+					"Modules/TiersInfo/Templates/netscore_ns_loyalty_rewards_tiersinfo.tpl",
+					"Modules/LoyaltyInfo/Templates/netscore_ns_loyalty_rewards_loyaltyinfo.tpl",
+					"Modules/EarnedHistory/Templates/netscore_ns_loyalty_rewards_earnedhistory_not_eligible.tpl",
+					"Modules/GenerateGiftCertificate/Templates/netscore_ns_loyalty_rewards_generategiftcertificate.tpl",
+					"Modules/DisplayLoyaltyPoints/Templates/netscore_ns_loyalty_rewards_displayloyaltypoints.tpl",
+					"Modules/DisplayLoyaltyPoints/Templates/netscore_ns_loyalty_rewards_displayplployaltypoints.tpl",
+					"Modules/SocialSharing/Templates/netscore_ns_loyalty_rewards_socialsharing.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/PointsRedeemCheckout/Templates/netscore_ns_loyalty_rewards_pointsredeemcheckout.tpl",
+					"Modules/ReferCodeAtSignup/Templates/netscore_ns_loyalty_rewards_refercodeatsignup.tpl",
+					"Modules/DisplayLoyaltyPoints/Templates/netscore_ns_loyalty_rewards_displayloyaltypoints.tpl",
+					"Modules/DisplayLoyaltyPoints/Templates/netscore_ns_loyalty_rewards_displayplployaltypoints.tpl",
+					"Modules/EarnedHistory/Templates/netscore_ns_loyalty_rewards_earnedhistory_not_eligible.tpl",
+					"Modules/EarnedHistory/Templates/netscore_ns_loyalty_rewards_earnedhistory.tpl",
+					"Modules/GenerateGiftCertificate/Templates/netscore_ns_loyalty_rewards_generategiftcertificate.tpl",
+					"Modules/LoyaltyInfo/Templates/netscore_ns_loyalty_rewards_loyaltyinfo.tpl",
+					"Modules/RedeemHistory/Templates/netscore_ns_loyalty_rewards_redeemhistory.tpl",
+					"Modules/ReferalCodeShare/Templates/netscore_ns_loyalty_rewards_referalcodeshare.tpl",
+					"Modules/SocialSharing/Templates/netscore_ns_loyalty_rewards_socialsharing.tpl",
+					"Modules/TiersInfo/Templates/netscore_ns_loyalty_rewards_tiersinfo.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/DisplayLoyaltyPoints/Sass/_ns_loyalty_rewards-displayloyaltypoints.scss",
+			"myaccount": "Modules/EarnedHistory/Sass/_ns_loyalty_rewards-earnedhistory.scss",
+			"checkout": "Modules/PointsRedeemCheckout/Sass/_ns_loyalty_rewards-pointsredeemcheckout.scss"
+		},
+		"files": [
+			"Modules/EarnedHistory/Sass/_ns_loyalty_rewards-earnedhistory.scss",
+			"Modules/RedeemHistory/Sass/_ns_loyalty_rewards-redeemhistory.scss",
+			"Modules/ReferalCodeShare/Sass/_ns_loyalty_rewards-referalcodeshare.scss",
+			"Modules/TiersInfo/Sass/_ns_loyalty_rewards-tiersinfo.scss",
+			"Modules/LoyaltyInfo/Sass/_ns_loyalty_rewards-loyaltyinfo.scss",
+			"Modules/DisplayLoyaltyPoints/Sass/_ns_loyalty_rewards-displayloyaltypoints.scss",
+			"Modules/SocialSharing/Sass/_ns_loyalty_rewards-socialsharing.scss",
+			"Modules/PointsRedeemCheckout/Sass/_ns_loyalty_rewards-pointsredeemcheckout.scss",
+			"Modules/GenerateGiftCertificate/Sass/_ns_loyalty_rewards-generategiftcertificate.scss",
+			"Modules/ReferCodeAtSignup/Sass/_ns_loyalty_rewards-refercodeatsignup.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/DisplayLoyaltyPoints/JavaScript/NetScore.NS_Loyalty_Rewards.DisplayLoyaltyPoints.js",
+			"myaccount": "Modules/EarnedHistory/JavaScript/NetScore.NS_Loyalty_Rewards.EarnedHistory.js",
+			"checkout": "Modules/PointsRedeemCheckout/JavaScript/NetScore.NS_Loyalty_Rewards.PointsRedeemCheckout.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/DisplayLoyaltyPoints/JavaScript/NetScore.NS_Loyalty_Rewards.DisplayLoyaltyPoints.js",
+					"Modules/DisplayLoyaltyPoints/JavaScript/DisplayLoyaltyPoints.View.js",
+					"Modules/SocialSharing/JavaScript/NetScore.NS_Loyalty_Rewards.SocialSharing.js",
+					"Modules/SocialSharing/JavaScript/SocialSharing.View.js",
+					"Modules/DisplayLoyaltyPoints/JavaScript/NetScore.NS_Loyalty_Rewards.DisplayLoyaltyPoints.Model.js",
+					"Modules/SocialSharing/JavaScript/NetScore.NS_Loyalty_Rewards.SocialSharing.Model.js",
+					"Modules/DisplayLoyaltyPoints/JavaScript/DisplayLoyaltyPoints.PLP.View.js",
+					"Modules/LoyaltyInfo/JavaScript/NetScore.NS_Loyalty_Rewards.LoyaltyInfoGet.Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/EarnedHistory/JavaScript/NetScore.NS_Loyalty_Rewards.EarnedHistory.js",
+					"Modules/EarnedHistory/JavaScript/EarnedHistory.View.js",
+					"Modules/EarnedHistory/JavaScript/NetScore.NS_Loyalty_Rewards.EarnedHistory.Model.js",
+					"Modules/EarnedHistory/JavaScript/NetScore.NS_Loyalty_Rewards.EarnedHistory.SS2Model.js",
+					"Modules/RedeemHistory/JavaScript/NetScore.NS_Loyalty_Rewards.RedeemHistory.js",
+					"Modules/RedeemHistory/JavaScript/RedeemHistory.View.js",
+					"Modules/ReferalCodeShare/JavaScript/NetScore.NS_Loyalty_Rewards.ReferalCodeShare.js",
+					"Modules/ReferalCodeShare/JavaScript/ReferalCodeShare.View.js",
+					"Modules/TiersInfo/JavaScript/NetScore.NS_Loyalty_Rewards.TiersInfo.js",
+					"Modules/TiersInfo/JavaScript/TiersInfo.View.js",
+					"Modules/LoyaltyInfo/JavaScript/NetScore.NS_Loyalty_Rewards.LoyaltyInfo.js",
+					"Modules/LoyaltyInfo/JavaScript/LoyaltyInfo.View.js",
+					"Modules/EarnedHistory/JavaScript/EarnedHistory.Router.js",
+					"Modules/LoyaltyInfo/JavaScript/NetScore.NS_Loyalty_Rewards.LoyaltyInfo.Model.js",
+					"Modules/RedeemHistory/JavaScript/NetScore.NS_Loyalty_Rewards.RedeemHistory.Model.js",
+					"Modules/ReferalCodeShare/JavaScript/NetScore.NS_Loyalty_Rewards.ReferalCodeShare.Model.js",
+					"Modules/TiersInfo/JavaScript/NetScore.NS_Loyalty_Rewards.TiersInfo.Model.js",
+					"Modules/LoyaltyInfo/JavaScript/LoyaltyInfo.Router.js",
+					"Modules/RedeemHistory/JavaScript/RedeemHistory.Router.js",
+					"Modules/ReferalCodeShare/JavaScript/ReferalCodeShare.Router.js",
+					"Modules/TiersInfo/JavaScript/TiersInfo.Router.js",
+					"Modules/EarnedHistory/JavaScript/EarnedHistory.NotEligible.View.js",
+					"Modules/GenerateGiftCertificate/JavaScript/NetScore.NS_Loyalty_Rewards.GenerateGiftCertificate.js",
+					"Modules/GenerateGiftCertificate/JavaScript/GenerateGiftCertificate.View.js",
+					"Modules/GenerateGiftCertificate/JavaScript/NetScore.NS_Loyalty_Rewards.GenerateGiftCertificate.Model.js",
+					"Modules/GenerateGiftCertificate/JavaScript/GenerateGiftCertificate.Router.js",
+					"Modules/LoyaltyInfo/JavaScript/NetScore.NS_Loyalty_Rewards.LoyaltyInfoGet.Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/PointsRedeemCheckout/JavaScript/NetScore.NS_Loyalty_Rewards.PointsRedeemCheckout.js",
+					"Modules/PointsRedeemCheckout/JavaScript/PointsRedeemCheckout.View.js",
+					"Modules/PointsRedeemCheckout/JavaScript/NetScore.NS_Loyalty_Rewards.PointsRedeemCheckout.Model.js",
+					"Modules/ReferCodeAtSignup/JavaScript/NetScore.NS_Loyalty_Rewards.ReferCodeAtSignup.js",
+					"Modules/ReferCodeAtSignup/JavaScript/ReferCodeAtSignup.View.js",
+					"Modules/ReferCodeAtSignup/JavaScript/NetScore.NS_Loyalty_Rewards.ReferCodeAtSignup.Model.js",
+					"Modules/LoyaltyInfo/JavaScript/NetScore.NS_Loyalty_Rewards.LoyaltyInfoGet.Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/EarnedHistory/SuiteScript/NetScore.NS_Loyalty_Rewards.EarnedHistory.js",
+		"files": [
+			"Modules/EarnedHistory/SuiteScript/NetScore.NS_Loyalty_Rewards.EarnedHistory.js",
+			"Modules/EarnedHistory/SuiteScript/EarnedHistory.ServiceController.js",
+			"Modules/RedeemHistory/SuiteScript/NetScore.NS_Loyalty_Rewards.RedeemHistory.js",
+			"Modules/RedeemHistory/SuiteScript/RedeemHistory.ServiceController.js",
+			"Modules/ReferalCodeShare/SuiteScript/NetScore.NS_Loyalty_Rewards.ReferalCodeShare.js",
+			"Modules/ReferalCodeShare/SuiteScript/ReferalCodeShare.ServiceController.js",
+			"Modules/TiersInfo/SuiteScript/NetScore.NS_Loyalty_Rewards.TiersInfo.js",
+			"Modules/TiersInfo/SuiteScript/TiersInfo.ServiceController.js",
+			"Modules/LoyaltyInfo/SuiteScript/NetScore.NS_Loyalty_Rewards.LoyaltyInfo.js",
+			"Modules/LoyaltyInfo/SuiteScript/LoyaltyInfo.ServiceController.js",
+			"Modules/DisplayLoyaltyPoints/SuiteScript/NetScore.NS_Loyalty_Rewards.DisplayLoyaltyPoints.js",
+			"Modules/DisplayLoyaltyPoints/SuiteScript/DisplayLoyaltyPoints.ServiceController.js",
+			"Modules/SocialSharing/SuiteScript/NetScore.NS_Loyalty_Rewards.SocialSharing.js",
+			"Modules/SocialSharing/SuiteScript/SocialSharing.ServiceController.js",
+			"Modules/PointsRedeemCheckout/SuiteScript/NetScore.NS_Loyalty_Rewards.PointsRedeemCheckout.js",
+			"Modules/PointsRedeemCheckout/SuiteScript/PointsRedeemCheckout.ServiceController.js",
+			"Modules/GenerateGiftCertificate/SuiteScript/NetScore.NS_Loyalty_Rewards.GenerateGiftCertificate.js",
+			"Modules/GenerateGiftCertificate/SuiteScript/GenerateGiftCertificate.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/EarnedHistory/SuiteScript2/EarnedHistory.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/NetScore/NS_Loyalty_Rewards@1.0.0",
+	"activation_id": "3",
+	"extension_id": "2301"
 }

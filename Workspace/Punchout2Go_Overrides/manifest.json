@@ -1,0 +1,51 @@
+{
+	"name": "Punchout2Go_Overrides",
+	"fantasyName": "Punchout2Go_Overrides",
+	"vendor": "Tvarana",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.1.0",
+	"description": "Override Few functions",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/Main/JavaScript/Tvarana.Punchout2Go_Overrides.Main.js",
+			"myaccount": "Modules/Main/JavaScript/Tvarana.Punchout2Go_Overrides.Main.js",
+			"checkout": "Modules/Main/JavaScript/Tvarana.Punchout2Go_Overrides.Main.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/Main/JavaScript/Tvarana.Punchout2Go_Overrides.Main.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/Main/JavaScript/Tvarana.Punchout2Go_Overrides.Main.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/Main/JavaScript/Tvarana.Punchout2Go_Overrides.Main.js"
+				]
+			}
+		}
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Tvarana/Punchout2Go_Overrides@1.1.0",
+	"activation_id": "3",
+	"extension_id": "11201"
+}

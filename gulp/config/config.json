@@ -11,7 +11,33 @@
         "port": 7777
     },
     "fetchConfig": {
-        "extension": "ACSThemeHelper,ConfigurationExtension,CustomFields,CustomLogin,FeaturedCategory,FeaturedProduct,GiftCertificateValueCheck,GridOrder,HeaderMenuCustomisation,InfiniteScrollExtension,InventoryDisplay,InventoryLookupExtension,ItemBadges,ManorThemeExtension,NS_Loyalty_Rewards,NewsletterSignUp,OrderStatus,Punchout2Go,SchoolAffiliationExtension,SetDefaultPaymentMethodCreditCard,StudentManagerExtension,TermsAndConditionsExtension,applecare_addon"
+        "extension": "ACSThemeHelper,ConfigurationExtension,CustomFields,CustomLogin,FeaturedCategory,FeaturedProduct,GiftCertificateValueCheck,GridOrder,HeaderMenuCustomisation,InfiniteScrollExtension,InventoryDisplay,InventoryLookupExtension,ItemBadges,ManorThemeExtension,NS_Loyalty_Rewards,NewsletterSignUp,OrderStatus,Punchout2Go,Punchout2Go_Overrides,SchoolAffiliationExtension,SetDefaultPaymentMethodCreditCard,StudentManagerExtension,TermsAndConditionsExtension,applecare_addon",
+        "overwrite_ext": [
+            "Workspace/ACSThemeHelper",
+            "Workspace/CustomLogin",
+            "Workspace/HeaderMenuCustomisation",
+            "Workspace/NS_Loyalty_Rewards",
+            "Workspace/SetDefaultPaymentMethodCreditCard",
+            "Workspace/applecare_addon",
+            "Workspace/ConfigurationExtension",
+            "Workspace/CustomFields",
+            "Workspace/FeaturedCategory",
+            "Workspace/FeaturedProduct",
+            "Workspace/GiftCertificateValueCheck",
+            "Workspace/GridOrder",
+            "Workspace/InfiniteScrollExtension",
+            "Workspace/InventoryDisplay",
+            "Workspace/InventoryLookupExtension",
+            "Workspace/ItemBadges",
+            "Workspace/ManorThemeExtension",
+            "Workspace/NewsletterSignUp",
+            "Workspace/OrderStatus",
+            "Workspace/Punchout2Go",
+            "Workspace/Punchout2Go_Overrides",
+            "Workspace/SchoolAffiliationExtension",
+            "Workspace/StudentManagerExtension",
+            "Workspace/TermsAndConditionsExtension"
+        ]
     },
     "extensionMode": true,
     "preserveManifest": false,
@@ -30,11 +56,12 @@
         "extmech_parent": "-15",
         "extensions_path": [
             "Workspace/ACSThemeHelper",
-            "Workspace/applecare_addon",
             "Workspace/CustomLogin",
             "Workspace/HeaderMenuCustomisation",
             "Workspace/NS_Loyalty_Rewards",
-            "Workspace/SetDefaultPaymentMethodCreditCard"
+            "Workspace/Punchout2Go_Overrides",
+            "Workspace/SetDefaultPaymentMethodCreditCard",
+            "Workspace/applecare_addon"
         ],
         "theme_path": "Workspace/Extras/SC_Dev",
         "overrides_path": "Workspace/Extras/SC_Dev/Overrides"

@@ -1,41 +1,42 @@
 {
-    "name": "SetDefaultPaymentMethodCreditCard",
-    "fantasyName": "SetDefaultPaymentMethodCreditCard",
-    "vendor": "Tvarana",
-    "version": "1.0.0",
-    "type": "extension",
-    "target": "SCA,SCS",
-    "target_version": {
-        "SCA": "",
-        "SCS": ""
-    },
-    "description": "Set Default Payment Method As Credit Card",
-    "skins": [],
-    "assets": {
-        "img": {
-            "files": []
-        },
-        "fonts": {
-            "files": []
-        },
-        "services": {
-            "files": []
-        }
-    },
-    "javascript": {
-        "entry_points": {
-            "checkout": "Modules/Tvr/JavaScript/Tvarana.SetDefaultPaymentMethodCreditCard.Tvr.js"
-        },
-        "application": {
-            "checkout": {
-                "files": [
-                    "Modules/Tvr/JavaScript/Tvarana.SetDefaultPaymentMethodCreditCard.Tvr.js"
-                ]
-            }
-        }
-    },
-    "local_folder": "Workspace\\SetDefaultPaymentMethodCreditCard",
-    "suitescript2": {
-        "files": []
-    }
+	"name": "SetDefaultPaymentMethodCreditCard",
+	"fantasyName": "SetDefaultPaymentMethodCreditCard",
+	"vendor": "Tvarana",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.0.0",
+	"description": "Set Default Payment Method As Credit Card",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": []
+		}
+	},
+	"javascript": {
+		"entry_points": {
+			"checkout": "Modules/Tvr/JavaScript/Tvarana.SetDefaultPaymentMethodCreditCard.Tvr.js"
+		},
+		"application": {
+			"checkout": {
+				"files": [
+					"Modules/Tvr/JavaScript/Tvarana.SetDefaultPaymentMethodCreditCard.Tvr.js"
+				]
+			}
+		}
+	},
+	"suitescript2": {
+		"files": []
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Tvarana/SetDefaultPaymentMethodCreditCard@1.0.0",
+	"activation_id": "3",
+	"extension_id": "10801"
 }

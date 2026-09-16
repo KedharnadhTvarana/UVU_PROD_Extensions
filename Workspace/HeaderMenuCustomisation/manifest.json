@@ -1,107 +1,108 @@
 {
-    "name": "HeaderMenuCustomisation",
-    "fantasyName": "Header Menu Customisation",
-    "vendor": "Tvarana",
-    "version": "1.1.3",
-    "type": "extension",
-    "target": "SCA,SCS",
-    "target_version": {
-        "SCA": "",
-        "SCS": ""
-    },
-    "description": "Header Menu Customisation",
-    "skins": [],
-    "assets": {
-        "img": {
-            "files": []
-        },
-        "fonts": {
-            "files": []
-        },
-        "services": {
-            "files": [
-                "services/HeaderMenuCustomisation.Service.ss"
-            ]
-        }
-    },
-    "configuration": {
-        "files": [
-            "Modules/HeaderMenuCustomisation/Configuration/HeaderMenuCustomisation.json"
-        ]
-    },
-    "sass": {
-        "entry_points": {
-            "shopping": "Modules/HeaderMenuCustomisation/Sass/_headermenucustomisation-headermenucustomisation.scss",
-            "myaccount": "Modules/HeaderMenuCustomisation/Sass/_headermenucustomisation-headermenucustomisation.scss",
-            "checkout": "Modules/HeaderMenuCustomisation/Sass/_headermenucustomisation-headermenucustomisation.scss"
-        },
-        "files": [
-            "Modules/HeaderMenuCustomisation/Sass/_headermenucustomisation-headermenucustomisation.scss"
-        ]
-    },
-    "templates": {
-        "application": {
-            "shopping": {
-                "files": [
-                    "Modules/HeaderMenuCustomisation/Templates/tvarana_headermenucustomisation_headermenucustomisation.tpl"
-                ]
-            },
-            "myaccount": {
-                "files": [
-                    "Modules/HeaderMenuCustomisation/Templates/tvarana_headermenucustomisation_headermenucustomisation.tpl"
-                ]
-            },
-            "checkout": {
-                "files": [
-                    "Modules/HeaderMenuCustomisation/Templates/tvarana_headermenucustomisation_headermenucustomisation.tpl"
-                ]
-            }
-        }
-    },
-    "javascript": {
-        "entry_points": {
-            "shopping": "Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js",
-            "myaccount": "Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js",
-            "checkout": "Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js"
-        },
-        "application": {
-            "shopping": {
-                "files": [
-                    "Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js",
-                    "Modules/HeaderMenuCustomisation/JavaScript/HeaderMenuCustomisation.View.js",
-                    "Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.Model.js",
-                    "Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.SS2Model.js"
-                ]
-            },
-            "myaccount": {
-                "files": [
-                    "Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js",
-                    "Modules/HeaderMenuCustomisation/JavaScript/HeaderMenuCustomisation.View.js",
-                    "Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.Model.js",
-                    "Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.SS2Model.js"
-                ]
-            },
-            "checkout": {
-                "files": [
-                    "Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js",
-                    "Modules/HeaderMenuCustomisation/JavaScript/HeaderMenuCustomisation.View.js",
-                    "Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.Model.js",
-                    "Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.SS2Model.js"
-                ]
-            }
-        }
-    },
-    "ssp-libraries": {
-        "entry_point": "Modules/HeaderMenuCustomisation/SuiteScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js",
-        "files": [
-            "Modules/HeaderMenuCustomisation/SuiteScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js",
-            "Modules/HeaderMenuCustomisation/SuiteScript/HeaderMenuCustomisation.ServiceController.js"
-        ]
-    },
-    "local_folder": "Workspace\\HeaderMenuCustomisation",
-    "suitescript2": {
-        "files": [
-            "Modules/HeaderMenuCustomisation/SuiteScript2/HeaderMenuCustomisation.Service.ss"
-        ]
-    }
+	"name": "HeaderMenuCustomisation",
+	"fantasyName": "Header Menu Customisation",
+	"vendor": "Tvarana",
+	"type": "extension",
+	"target": "SCA,SCS",
+	"target_version": {
+		"SCA": "",
+		"SCS": ""
+	},
+	"version": "1.1.3",
+	"description": "Header Menu Customisation",
+	"assets": {
+		"img": {
+			"files": []
+		},
+		"fonts": {
+			"files": []
+		},
+		"services": {
+			"files": [
+				"services/HeaderMenuCustomisation.Service.ss"
+			]
+		}
+	},
+	"configuration": {
+		"files": [
+			"Modules/HeaderMenuCustomisation/Configuration/HeaderMenuCustomisation.json"
+		]
+	},
+	"templates": {
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HeaderMenuCustomisation/Templates/tvarana_headermenucustomisation_headermenucustomisation.tpl"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/HeaderMenuCustomisation/Templates/tvarana_headermenucustomisation_headermenucustomisation.tpl"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/HeaderMenuCustomisation/Templates/tvarana_headermenucustomisation_headermenucustomisation.tpl"
+				]
+			}
+		}
+	},
+	"sass": {
+		"entry_points": {
+			"shopping": "Modules/HeaderMenuCustomisation/Sass/_headermenucustomisation-headermenucustomisation.scss",
+			"myaccount": "Modules/HeaderMenuCustomisation/Sass/_headermenucustomisation-headermenucustomisation.scss",
+			"checkout": "Modules/HeaderMenuCustomisation/Sass/_headermenucustomisation-headermenucustomisation.scss"
+		},
+		"files": [
+			"Modules/HeaderMenuCustomisation/Sass/_headermenucustomisation-headermenucustomisation.scss"
+		]
+	},
+	"javascript": {
+		"entry_points": {
+			"shopping": "Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js",
+			"myaccount": "Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js",
+			"checkout": "Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js"
+		},
+		"application": {
+			"shopping": {
+				"files": [
+					"Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js",
+					"Modules/HeaderMenuCustomisation/JavaScript/HeaderMenuCustomisation.View.js",
+					"Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.Model.js",
+					"Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.SS2Model.js"
+				]
+			},
+			"myaccount": {
+				"files": [
+					"Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js",
+					"Modules/HeaderMenuCustomisation/JavaScript/HeaderMenuCustomisation.View.js",
+					"Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.Model.js",
+					"Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.SS2Model.js"
+				]
+			},
+			"checkout": {
+				"files": [
+					"Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js",
+					"Modules/HeaderMenuCustomisation/JavaScript/HeaderMenuCustomisation.View.js",
+					"Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.Model.js",
+					"Modules/HeaderMenuCustomisation/JavaScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.SS2Model.js"
+				]
+			}
+		}
+	},
+	"ssp-libraries": {
+		"entry_point": "Modules/HeaderMenuCustomisation/SuiteScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js",
+		"files": [
+			"Modules/HeaderMenuCustomisation/SuiteScript/Tvarana.HeaderMenuCustomisation.HeaderMenuCustomisation.js",
+			"Modules/HeaderMenuCustomisation/SuiteScript/HeaderMenuCustomisation.ServiceController.js"
+		]
+	},
+	"suitescript2": {
+		"files": [
+			"Modules/HeaderMenuCustomisation/SuiteScript2/HeaderMenuCustomisation.Service.ss"
+		]
+	},
+	"path": "SuiteScripts/Deploy_Extensions/Tvarana/HeaderMenuCustomisation@1.1.3",
+	"activation_id": "3",
+	"extension_id": "8502"
 }
